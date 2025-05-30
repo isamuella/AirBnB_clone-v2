@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """Fabric script to deploy web static files to servers"""
 
-from fabric.api import env, put, run
+from fabric.api import env, put, run 
 import os
 
-env.hosts = ['44.203.2.87', '3.83.161.239']
+env.hosts = ["44.203.2.87", "3.83.161.239"]
 
 def do_deploy(archive_path):
     """Distributes an archive to web servers"""
